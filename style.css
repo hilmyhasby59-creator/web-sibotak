@@ -1,119 +1,70 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #0a1f44; /* biru tua Barça */
-    color: #fff;
+    background: navy;
+    color: white;
 }
 
 /* Navbar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 50px;
-    background: linear-gradient(90deg, #0a1f44, #a50044); /* biru → merah */
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    background: linear-gradient(to right, navy, crimson);
+    border-bottom: 3px solid gold;
 }
 
+/* Link */
 .navbar a {
-    color: #fff;
-    margin-left: 20px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: 0.3s;
+    color: white;
 }
 
 .navbar a:hover {
-    color: #ffcc00; /* kuning Barça */
+    color: gold;
 }
 
 /* Hero */
 .hero {
-    height: 90vh;
     background:
-    linear-gradient(rgba(10,31,68,0.8), rgba(165,0,68,0.7)),
+    linear-gradient(rgba(0,0,128,0.8), rgba(220,20,60,0.7)),
     url('https://images.unsplash.com/photo-1508098682722-e99c43a406b2');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 }
 
-.hero h2 {
-    font-size: 55px;
-    letter-spacing: 2px;
-}
-
+/* Highlight text */
 .hero span {
-    color: #ffcc00; /* aksen kuning */
+    color: gold;
 }
 
 /* Button */
 .btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: #a50044;
+    background: crimson;
     color: white;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: 0.3s;
 }
 
 .btn:hover {
-    background: #ffcc00;
-    color: #000;
-    transform: scale(1.1);
+    background: gold;
+    color: black;
 }
 
-/* Section */
-.section {
-    padding: 70px 20px;
-    text-align: center;
-}
-
+/* Section dark */
 .dark {
-    background: #091a33; /* biru lebih gelap */
+    background: repeating-linear-gradient(
+        90deg,
+        navy,
+        navy 40px,
+        crimson 40px,
+        crimson 80px
+    );
 }
 
-/* Cards */
-.cards {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-}
-
+/* Card */
 .card {
-    background: linear-gradient(145deg, #0a1f44, #a50044);
-    padding: 20px;
-    border-radius: 15px;
-    width: 260px;
-    transition: all 0.3s ease;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    background: black;
+    border: 2px solid transparent;
 }
 
 .card:hover {
-    transform: translateY(-10px) scale(1.05);
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
+    border-color: gold;
+    box-shadow: 0 0 20px gold;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    background: linear-gradient(90deg, #0a1f44, #a50044);
-    font-size: 14px;
+    background: linear-gradient(to right, navy, crimson);
+    border-top: 3px solid gold;
 }
