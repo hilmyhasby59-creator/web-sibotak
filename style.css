@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #0b0c10;
+    background: #0a1f44; /* biru tua Barça */
     color: #fff;
 }
 
@@ -15,28 +15,32 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 20px 50px;
-    background: #111;
+    background: linear-gradient(90deg, #0a1f44, #a50044); /* biru → merah */
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .navbar a {
     color: #fff;
     margin-left: 20px;
     text-decoration: none;
+    font-weight: 500;
     transition: 0.3s;
 }
 
 .navbar a:hover {
-    color: #e63946;
+    color: #ffcc00; /* kuning Barça */
 }
 
 /* Hero */
 .hero {
     height: 90vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+    background:
+    linear-gradient(rgba(10,31,68,0.8), rgba(165,0,68,0.7)),
     url('https://images.unsplash.com/photo-1508098682722-e99c43a406b2');
     background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,51 +48,61 @@ body {
 }
 
 .hero h2 {
-    font-size: 50px;
+    font-size: 55px;
+    letter-spacing: 2px;
 }
 
 .hero span {
-    color: #e63946;
+    color: #ffcc00; /* aksen kuning */
 }
 
+/* Button */
 .btn {
     display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background: #e63946;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #a50044;
     color: white;
-    border-radius: 5px;
+    border-radius: 30px;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ffcc00;
+    color: #000;
+    transform: scale(1.1);
 }
 
 /* Section */
 .section {
-    padding: 60px 20px;
+    padding: 70px 20px;
     text-align: center;
 }
 
 .dark {
-    background: #1a1a1a;
+    background: #091a33; /* biru lebih gelap */
 }
 
 /* Cards */
 .cards {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
     flex-wrap: wrap;
 }
 
 .card {
-    background: #222;
+    background: linear-gradient(145deg, #0a1f44, #a50044);
     padding: 20px;
-    border-radius: 10px;
-    width: 250px;
-    transition: 0.3s;
+    border-radius: 15px;
+    width: 260px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.05);
 }
 
 .card img {
@@ -100,5 +114,6 @@ body {
 footer {
     text-align: center;
     padding: 20px;
-    background: #111;
+    background: linear-gradient(90deg, #0a1f44, #a50044);
+    font-size: 14px;
 }
